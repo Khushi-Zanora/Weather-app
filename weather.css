@@ -1,0 +1,157 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background: #fff7fb; /* soft white-pink */
+    color: #5a5a5a;
+    transition: 0.3s;
+}
+
+/* HEADER */
+header {
+    padding: 20px 30px;
+    background: #ffd6e8; /* baby pink */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #6a4b5b;
+}
+
+header button {
+    background: #ffe066; /* sunny yellow */
+    color: #6a4b5b;
+}
+
+/* MAIN */
+main {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+input {
+    padding: 12px;
+    width: 260px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    color: #6a4b5b;
+}
+
+button {
+    padding: 12px 18px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #ffe066;
+    color: #6a4b5b;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffdb3a;
+}
+
+/* CURRENT WEATHER */
+#weatherResult {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #6a4b5b;
+    animation: fadeUp 0.6s ease;
+}
+
+#weatherResult img {
+    width: 64px;
+}
+
+/* FORECAST */
+#forecastTitle {
+    margin-top: 40px;
+    color: #6a4b5b;
+}
+
+#forecast {
+    margin: 25px auto 0;
+    max-width: 900px;            
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    animation: fadeUp 0.8s ease;
+}
+
+.forecast-card {
+    background: #ffd6e8;
+    padding: 18px;
+    border-radius: 16px;
+    color: #6a4b5b;
+    transition: transform 0.3s ease;
+}
+
+.forecast-card:hover {
+    transform: translateY(-6px);
+}
+
+.forecast-card img {
+    width: 48px;
+}
+
+/* 🌙 DARK MODE */
+.dark-mode {
+    background: #1b1b1b;
+    color: #e0e0e0;
+}
+
+.dark-mode header {
+    background: #2a2a2a;
+}
+
+.dark-mode header h1 {
+    color: #f2f2f2;
+}
+
+.dark-mode .forecast-card {
+    background: #333;
+    color: #e6e6e6;
+}
+
+.dark-mode input {
+    background: #2a2a2a;
+    color: #f2f2f2;
+    border: 1px solid #555;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.loader {
+    margin: 30px auto;
+    width: 45px;
+    height: 45px;
+    border: 5px solid #ffd6e8;
+    border-top: 5px solid #ffe066;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

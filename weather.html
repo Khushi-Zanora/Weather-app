@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌤 Weather App</h1>
+        <button id="modeBtn" onclick="toggleDarkMode()">Dark Mode</button>
+    </header>
+
+    <main>
+        <input type="text" id="locationInput" placeholder="Enter city name">
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="loader" class="loader"></div>
+
+        <div id="weatherResult"></div>
+
+        <h2 id="forecastTitle"></h2>
+        <div id="forecast"></div>
+    </main>
+
+    <script src="weather.js"></script>
+</body>
+</html>
