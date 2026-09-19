@@ -123,6 +123,18 @@ button:hover {
     border: 1px solid #555;
 }
 
+.dark-mode #forecastTitle {
+    /* margin-top: 40px; */
+    color: #df9ebf;
+}
+
+.dark-mode #weatherResult {
+    /* margin-top: 30px; */
+    /* font-size: 22px; */
+    color: #df9ebf;
+    /* animation: fadeUp 0.6s ease; */
+}
+
 @keyframes fadeUp {
     from {
         opacity: 0;

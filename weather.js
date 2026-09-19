@@ -32,6 +32,7 @@ function getWeather(locationFromGeo = null) {
             hideLoader();
 
             document.getElementById("weatherResult").innerHTML = `
+                <h2>${locationInput.value}</h2>
                 <img src="https:${data.current.condition.icon}" alt="icon"><br>
                 <strong>${data.current.temp_c}°C</strong><br>
                 ${data.current.condition.text}
